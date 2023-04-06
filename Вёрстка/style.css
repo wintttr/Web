@@ -111,6 +111,7 @@ h1 {
 
 #offercontainer{
     justify-content: center;
+    flex-wrap: wrap;
     gap: 2em;
 }
 
@@ -122,10 +123,16 @@ h1 {
 }
 
 .offer{
-    background-color: rgba(239, 255, 235, 0.85);
-    max-width: 20vw;
-    min-width: 100px;
+    background-color: rgba(239, 255, 235, 0.85); 
     padding: 2em;
+
+    @media (max-width: 980px) {
+        max-width: 50vw;   
+    };
+
+    @media (min-width: 981px) {
+        max-width: 20vw;
+    };
 }
 
 .offerimg{
