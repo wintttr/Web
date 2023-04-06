@@ -1,0 +1,164 @@
+body{
+    margin:0;
+    
+}
+
+.flexContainer{
+    display: flex;
+}
+
+#headsection {
+    background-image: linear-gradient(to bottom, 
+                    rgba(0, 0, 0, 0.6),
+                    rgba(201, 201, 201, 0.3)), 
+                    url("./grape.jpg");
+
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: 100% 50%;
+    width: 100%;
+}
+
+#organiclogo{
+    position: relative;
+
+    flex-direction: column;
+
+    padding: 10vw 13vw;
+}
+
+#logopicture{
+    max-width: 13em;
+}
+
+#logotext{
+    flex-basis: content;
+    font-family: serif;
+    font-weight: 10;
+    word-wrap: break-word;
+    color:white;
+    font-size: 6em;
+
+    margin-bottom: 0.1em;
+}
+
+#underline {
+    height: 5pt;
+    max-width: 40em;
+    background-color: white;
+}
+
+
+#undertext {
+    font-family: sans-serif;
+    font-size: 24px;
+    margin-top: 40px;
+    margin-bottom: 40px;
+    max-width: 25em;
+    color: white;
+    line-height: 1.6;
+}
+
+#morebutton{
+    background-color: white;
+    
+    color: black;
+    text-decoration: none;
+    text-transform:uppercase;
+    font-size: 1.1em;
+    font-family: sans-serif;
+    font-weight: lighter;
+    letter-spacing: 2px;
+
+    padding: 1em;
+    max-width: fit-content;
+}
+
+#morebutton:hover{
+    background-color: rgb(223, 223, 223);
+}
+
+#aboutsection{
+    display: block;
+    width: 100%;
+    margin: 5em auto 0;
+}
+
+h1 {
+    font-family: serif;
+    font-size: 5em;
+    font-weight: 100;
+    text-align: center;
+    margin: 0;
+}
+
+.description {
+    font-family: sans-serif;
+    font-size: 1em;
+    font-style: oblique;
+    font-weight: 100;
+    line-height: 1.6;
+
+    max-width: 45vw;
+    text-align: center;
+    margin: 1em auto;
+}
+
+#offerssection{
+    width: 100%;
+    padding-bottom: 6em;
+}
+
+#offercontainer{
+    justify-content: center;
+    gap: 2em;
+}
+
+#offerbg{
+    display: block;
+    width: 70%;
+    height: 30vw;
+    margin: auto;
+}
+
+.offer{
+    background-color: rgba(239, 255, 235, 0.85);
+    max-width: 20vw;
+    min-width: 100px;
+    padding: 2em;
+}
+
+.offerimg{
+    max-width: 5em;
+}
+
+.offerheader{
+    font-family: sans-serif;
+    font-size: 2em;
+    margin: 0.5em 0;
+    color: #79a14e;
+}
+
+.offerbody{
+    font-family: sans-serif;
+    font-size: 1.2em;
+    line-height: 1.6;
+    font-style: oblique;
+}
+
+#seasonfruits {
+    display: block;
+    position: relative;
+    background-color: rgba(239, 255, 235, 0.85);
+    max-width: 50%;
+    margin:auto;
+    padding: 1.5em 1.9em;
+    height: 40em;
+}
+
+#fruitsunderline {
+    height: 2px;
+    width: 3em;
+    background-color: #79a14e;
+    margin: 0 auto 2em;
+}
