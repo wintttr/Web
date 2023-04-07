@@ -245,7 +245,7 @@ h1 {
     }
 
     .afferdesc{
-        max-width: 25em;
+        max-width: 20em;
         left: 4em;
     }
 }
@@ -340,9 +340,10 @@ h1 {
     #veggrid{
         top: -10vw;
     }
+
     .flexImg{
         max-width: initial;
-        min-width: 30em;
+        min-width: 25em;
         margin: auto;
     }
 }
