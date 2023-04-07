@@ -117,7 +117,7 @@ h1 {
 
 #offerbg{
     display: block;
-    width: 70%;
+    width: 80%;
     height: 30vw;
     margin: auto;
 }
@@ -125,14 +125,18 @@ h1 {
 .offer{
     background-color: rgba(239, 255, 235, 0.85); 
     padding: 2em;
+}
 
-    @media (max-width: 980px) {
-        max-width: 50vw;   
-    };
+@media screen and (max-width: 980px) {
+    .offer{
+        max-width: 50vw;
+    }
+}
 
-    @media (min-width: 981px) {
+@media screen and (min-width: 981px) {
+    .offer{
         max-width: 20vw;
-    };
+    }
 }
 
 .offerimg{
