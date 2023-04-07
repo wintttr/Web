@@ -5,7 +5,7 @@
     <link rel="stylesheet" href="style.css">
     <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
     <meta name="viewport" content="width=device-width" />
-    <title>Document</title>
+    <title>Organic</title>
 </head>
 <body>
     <section id="headsection">
@@ -20,7 +20,7 @@
 
             <div id="undertext">Выбор свежих сезонных продуктов доставляется прямо к вашей двери.</div>
 
-            <a href="#" id="morebutton">Больше информации</a>
+            <a href="#" class="btn" id="morebutton">Больше информации</a>
         </div>
     </section>
 
@@ -55,7 +55,9 @@
                     sagittis suscipit ultrices.</div>
             </div>
             <div class="offer">
-                <div class="offerimg"><img src="cheese.png" style="max-width: 100%;"></div>
+                <div class="offerimg">
+                    <img src="cheese.png" style="max-width: 100%;">
+                </div>
                 <div class="offerheader">Яйца и сыр</div>
                 <div class="offerbody">Lorem ipsum dolor sit amet, 
                     consectetur adipiscing elit nullam nunc justo 
@@ -66,12 +68,154 @@
 
     <section id="firstpromosection">
         <div id="seasonfruits">
-            <h1>Сезонные фрукты</h1>
+            <h1 id="fhead">Сезонные фрукты</h1>
             <div id="fruitsunderline"></div>
-            <div class="description">Органические продукты питания - это 
+            <div class="description" id="fdesc">Органические продукты питания - это 
                                     продукты питания, произведенные методами, 
                                     соответствующими стандартам органического земледелия.
             </div>
+        </div>
+
+        <div class="flexContainer" id="affers">
+            <div class="affer">
+                <div class="afferimgdiv
+                ">
+                    <img class="afferimg" src="box_4_veg.jpg">
+                </div>
+
+                <div class="afferdesc">
+                    <div class="adeschead">
+                        Ящики для овощей
+                    </div>
+
+                    <div class="adescbody">
+                        Выбор свежих сезонных продуктов доставляется прямо к вашей двери.
+                    </div>
+                </div>
+            </div>
+            <div class="affer">
+                <div class="afferimgdiv">
+                    <img class="afferimg" src="our_cheese.jpg">
+                </div>
+
+                <div class="afferdesc">
+                    <div class="adeschead">
+                        Наш сыр
+                    </div>
+
+                    <div class="adescbody">
+                        Мы любим наши сыры и будем рады составить для вас выбор. Сообщите нам сколько
+                    </div>
+                </div>
+            </div>
+            <div class="affer">
+                <div class="afferimgdiv">
+                    <img class="afferimg" src="farmer.jpg">
+                </div>
+
+                <div class="afferdesc">
+                    <div class="adeschead">
+                        Наша ферма
+                    </div>
+
+                    <div class="adescbody">
+                        Выбор свежих сезонных продуктов доставляется прямо к вашей двери.
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="wholesalesection">
+        <div class="flexContainer" id="wslogo">
+            <div id="wsheader">
+                Оптовые продажи
+            </div>
+            <div id="wsbody">
+                Получайте последние новости об органических продуктах, 
+                питании, здоровье и благополучии на свой почтовый ящик каждую неделю!
+            </div>
+
+            <a href="#" class="btn" id="wsbutton">Купить онлайн</a>
+        </div>
+    </section>
+
+
+    <section id="secondpromosection">
+        <div id="seasonfruits2">
+            <h1 id="fhead">Сезонные фрукты и овощи</h1>
+            <div id="fruitsunderline"></div>
+            <div class="description" id="sdesc">Органические продукты питания - это 
+                                    продукты питания, произведенные методами, 
+                                    соответствующими стандартам органического земледелия.
+            </div>
+        </div>
+
+        <div class="flexContainer" id="veggrid">
+            <div class="flexItem">
+                <img src="berry.jpg" class="flexImg">
+            </div>
+            <div class="flexItem">
+                <img src="grid_apples.jpeg" class="flexImg">
+            </div>
+            <div class="flexItem">
+                <img src="kapusta.jpg" class="flexImg">
+            </div>
+            <div class="flexItem">
+                <img src="morkovka.jpg" class="flexImg">
+            </div>
+            <div class="flexItem">
+                <img src="tykva.jpg" class="flexImg">
+            </div>
+            <div class="flexItem">
+                <img src="peaches.jpg" class="flexImg">
+            </div>
+        </div>
+    </section>
+
+    <section id="contactussection">
+        <div class="flexContainer" id="culogo">
+            <div id="cuheader">
+                Связаться с нами
+            </div>
+            <div id="cubody">
+                Чтобы иметь право на оптовые цены, вы должны 
+                покупать у нас оптом. Для некоторых клиентов это 
+                может быть поддон лимонов, а для других - 10-килограммовая 
+                коробка моркови для приготовления сока дома.
+            </div>
+            <div class="flexContainer" id="contacts">
+                <input class="inputpls" placeholder="Enter your name">
+                <input class="inputpls" placeholder="Enter a valid email">
+                <a href="#" class="btn" id="cubutton">Разместить</a>
+            </div>
+        </div>
+    </section>
+
+    <section id="FAQ">
+        <div id="cosmeticcont">
+            <div id="cosmeticblock1"></div>
+
+            <div id="faqcont">
+                <div id="faqheader">Как я узнаю, что это органический продукт?</div>
+                <div id="faqbody">All pre-packaged organic food products in Europe 
+                                which meet organic standards carry the “Euro-Leaf” 
+                                EU organic logo. The logo also helps you to identify 
+                                the place of farming e.g. Quisque fringilla sit amet 
+                                dolor commodo efficitur. Aliquam et sem odio. In ullamcorper 
+                                nisi nunc, et molestie ipsum iaculis sit amet.
+                </div>
+            </div>
+
+            <div id="cosmeticblock2"></div>
+        </div>
+    </section>
+
+    <section id="last"></section>
+
+    <section id="colontitul">
+        <div id="colontext">
+            Powered by <a id="colonref" href="https://www.github.com/wintttr">wintttr</a>
         </div>
     </section>
 </body>

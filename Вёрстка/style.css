@@ -1,6 +1,5 @@
 body{
     margin:0;
-    
 }
 
 .flexContainer{
@@ -9,8 +8,8 @@ body{
 
 #headsection {
     background-image: linear-gradient(to bottom, 
-                    rgba(0, 0, 0, 0.6),
-                    rgba(201, 201, 201, 0.3)), 
+                    rgba(0, 0, 0, 0.25),
+                    rgba(0, 0, 0, 0.25)), 
                     url("./grape.jpg");
 
     background-size: cover;
@@ -59,24 +58,28 @@ body{
     line-height: 1.6;
 }
 
+
 #morebutton{
     background-color: white;
-    
     color: black;
+}
+
+
+.btn{
     text-decoration: none;
-    text-transform:uppercase;
+    text-transform: uppercase;
+    max-width: fit-content;
+    padding: 1em;
     font-size: 1.1em;
     font-family: sans-serif;
     font-weight: lighter;
     letter-spacing: 2px;
-
-    padding: 1em;
-    max-width: fit-content;
 }
 
 #morebutton:hover{
     background-color: rgb(223, 223, 223);
 }
+
 
 #aboutsection{
     display: block;
@@ -160,16 +163,328 @@ h1 {
 #seasonfruits {
     display: block;
     position: relative;
-    background-color: rgba(239, 255, 235, 0.85);
-    max-width: 50%;
-    margin:auto;
+    background-color: #edf6e3;
+    max-width: 55%;
+    margin: auto;
     padding: 1.5em 1.9em;
-    height: 40em;
+    height: 30em;
 }
 
 #fruitsunderline {
     height: 2px;
-    width: 3em;
+    width: 2em;
     background-color: #79a14e;
-    margin: 0 auto 2em;
+    margin: 0.5em auto 2em;
+}
+
+#fhead{
+    padding-top: 0.6em;
+}
+
+#fdesc{
+    margin-bottom: 4em;
+}
+
+
+#affers {
+    position: relative;
+    top: -15vw;
+    justify-content: center;
+    max-width: 70vw;
+    margin: auto;
+    gap: 4em;
+
+    margin-bottom: -6em;
+}
+
+.affer{
+    width: 20em;
+}
+
+.afferimgdiv{
+    max-width: 26vw;
+    max-height: 30em;
+    overflow: hidden;
+}
+
+.afferimg{
+    max-width: 25em;
+}
+
+.afferdesc{
+    position: relative;
+    top: -50pt;
+    left: 2em;
+    background-color: #d7ebc1;
+    max-width: 20vw;
+    padding: 1.5em;
+}
+
+@media screen and (max-width: 980px) {
+    #affers{
+        position: relative;
+        flex-wrap: wrap;
+        align-content: center;
+        gap: 1em;
+    }
+    
+    .affer{
+        min-width: 30em;
+        max-width: initial;
+        margin-bottom: 0.5em;
+    }
+
+    .afferimgdiv{
+        max-width: initial;
+        max-height: 40em;
+    }
+
+    .afferimg{
+        max-width: initial;
+        max-height: 20em;
+    }
+
+    .afferdesc{
+        max-width: 25em;
+        left: 4em;
+    }
+}
+
+.adeschead {
+    font-family: sans-serif;
+    letter-spacing: 1.2px;
+    font-weight: 100;
+    font-size: 2em;
+    margin: 0.4em auto;
+}
+
+.adescbody {
+    font-family: sans-serif;
+    font-size: 1em;
+    line-height: 1.6;
+}
+
+#sdesc{
+    height: 200px;
+}
+
+#wholesalesection {
+    background-image: linear-gradient(to bottom, 
+                    rgba(0, 0, 0, 0.25),
+                    rgba(0, 0, 0, 0.25)), 
+                    url("./apples.jpg");
+
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: 100% 50%;
+    width: 100%;
+}
+
+#wslogo{
+    flex-direction: column;
+    padding: 5em 0 5em 10vw;
+}
+
+#wsheader{
+    font-family: serif;
+    color:white;
+    font-size: 6em;
+    max-width: 2em;
+}
+
+#wsbody{
+    font-family: sans-serif;
+    font-weight: 100;
+    font-size: 2.3em;
+
+    max-width: 20em;
+    line-height: 1.6;
+    color: white;
+
+    margin: 1.5em 0;
+}
+
+#wsbutton{
+    color: white;
+    background-color: #79a14e;
+}
+
+#wsbutton:hover{
+    background-color: #6d9047;
+}
+
+.gridContainer{
+    display: grid;
+}
+
+#veggrid{
+    position: relative;
+    top: -15vw;
+    
+    gap: 25px;
+    justify-content: center;
+    flex-wrap: wrap;
+
+    max-width: 80%;
+
+    margin: auto;
+    margin-bottom: -3em;
+}
+
+.flexImg{
+    max-width: 20em;
+    margin: auto;
+}
+
+@media screen and (max-width: 980px) {
+    #veggrid{
+        top: -10vw;
+    }
+    .flexImg{
+        max-width: initial;
+        min-width: 30em;
+        margin: auto;
+    }
+}
+
+@media screen and (max-width: 1280px) {
+    .flexImg{
+        max-width: 15em;
+        margin: auto;
+    }
+}
+
+#seasonfruits2{
+    display: block;
+    position: relative;
+    background-color: #edf6e3;
+    max-width: 55%;
+    margin: 0 auto 4vw auto;
+    padding: 1.5em 1.9em;
+    height: 30em;
+}
+
+
+#contactussection {
+    background-image: linear-gradient(to bottom, 
+                    rgba(0, 0, 0, 0.25),
+                    rgba(0, 0, 0, 0.25)), 
+                    url("./chernika.jpg");
+
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: 100% 50%;
+    width: 100%;
+}
+
+#culogo{
+    flex-direction: column;
+    padding: 5em 0 5em 10vw;
+}
+
+#cuheader{
+    font-family: serif;
+    color:white;
+    max-width: 3em;
+    font-size: 6em;
+}
+
+#cubody{
+    font-family: sans-serif;
+    font-weight: 100;
+    font-size: 2.3em;
+
+    max-width: 20em;
+    line-height: 1.6;
+    color: white;
+
+    margin: 1.5em 0;
+}
+
+#cubutton{
+    color: white;
+    background-color: #79a14e;
+}
+
+#cubutton:hover{
+    background-color: #6d9047;
+}
+
+.inputpls{
+    font-family: sans-serif;
+    font-size: 1em;
+    max-width:fit-content;
+    padding: 1em;
+
+}
+
+#contacts{
+    flex-wrap: wrap;
+    gap: 0.5em;
+}
+
+#faqheader{
+    font-family: serif;
+    font-size: 4em;
+    margin-bottom: 1em;
+}
+
+#faqbody{
+    font-family: sans-serif;
+    text-align: justify;
+    max-width: 80%;
+}
+
+#cosmeticcont{
+    display: grid;
+    overflow: hidden;
+    grid-template-columns: 15vw 55vw 30vw;
+    gap: 4.5em;
+    justify-items: center;
+    align-items: center;
+    margin: 6em 0;
+}
+
+#cosmeticblock1 {
+    background-color: #79a14e;
+    width: 10px;
+    height: 15em;
+}
+
+#cosmeticblock2 {
+    position: relative;
+    z-index: -1;
+    right: 300px;
+    background-color: #e7f3da;
+    height: 25em;
+    width: 30vw;
+}
+
+#last{
+    background-image: linear-gradient(to bottom, 
+                    rgba(0, 0, 0, 0.25),
+                    rgba(0, 0, 0, 0.25)), 
+                    url("./woman.jpg");
+
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: 50% 40%;
+    width: 100%;
+    height: 800px;
+}
+
+#colontitul{
+    background-color: rgb(51, 51, 51);
+    padding: 0.8em;
+    font-weight: 100;
+}
+
+#colontext{
+    color: white;
+    text-align: center;
+}
+
+#colonref{
+    color: rgb(74, 137, 255);
+    text-decoration: none;
 }
