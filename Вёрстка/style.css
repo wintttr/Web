@@ -455,10 +455,10 @@ h1 {
 #cosmeticblock2 {
     position: relative;
     z-index: -1;
-    right: 300px;
+    margin-right: 60vw;
     background-color: #e7f3da;
-    height: 25em;
-    width: 30vw;
+    height: 24em;
+    width: 20em;
 }
 
 #last{
