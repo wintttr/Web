@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js"></script>
+	<script src="calendar.js"></script>
+    <script src="date.js"></script>
+</head>
+<body>
+    <h1>Задания по JS - Вариант 14</h1>
+
+    <div class="task" id="task1">
+        <button class="collapsible_button" id="task_button_1">Задание 1 - Дата/Время</button>
+        <div class="content">
+            <p id="dateTime"></p>
+        </div>
+    </div>
+
+    <div class="task" id="task2">
+        <button class="collapsible_button" id="task_button_2">Задание 2 - Календарь</button>
+
+        <div class="content">
+            <input type="date" name="date" id="date_input" required>
+
+            <div class="calendar"></div>
+        </div>
+    </div>
+
+    <div class="task" id="task3">
+        <button class="collapsible_button" id="task_button_3">Задание 3 - Нахождение элементов в DOM-дереве</button>
+        <div class="content">
+            <form></form>
+            <form></form>
+            <form></form>
+            <form></form>
+            <div>
+                Задание: вывести число форм
+            </div>
+            <div id="forms_count"></div>
+        </div>
+    </div>
+
+    <div class="task" id="task4">
+        <button class="collapsible_button" id="task_button_4">Задание 4 - изменение объекта</button>
+        <div class="content">
+            <div>
+                Задание: Через указанный промежуток времени 50мс выполнить анимацию выбранного
+                блока – увеличение на 50% с разворотом по часовой стрелке на 180о
+            </div>
+            <div id="container">
+                <div id="block">123</div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

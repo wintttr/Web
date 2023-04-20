@@ -1,0 +1,30 @@
+.task{
+    margin: 1em;
+    width: fit-content;
+    max-width: 40em;
+}
+
+.content {
+    max-height: 0;
+    overflow: hidden;
+    transition: all 0.2s ease-out;
+    background-color: rgb(208, 208, 208);
+    transform: scale(1);
+}
+
+.content_showed{
+    max-height: fit-content;
+    padding: 1em;
+}
+
+.calendar_table{
+    border: 1px solid black
+}
+
+#block{
+    background-color: red;
+    height: 4em;
+    width: 8em;
+
+    margin: 5em auto;
+}
