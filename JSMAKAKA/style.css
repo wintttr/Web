@@ -30,10 +30,18 @@
 }
 
 #menu_items{
-    display: none;
+    max-height: 0;
+    overflow: hidden;
     transition: all 0.2s ease-out;
 }
 
 .menu_item {
+    max-height: 100px;
+    overflow: hidden;
+    transition: all 0.2s;
+}
+
+#amamiarujanai{
+    display: none;
     transition: all 0.2s ease-out;
 }
