@@ -28,3 +28,12 @@
 
     margin: 5em auto;
 }
+
+#menu_items{
+    display: none;
+    transition: all 0.2s ease-out;
+}
+
+.menu_item {
+    transition: all 0.2s ease-out;
+}

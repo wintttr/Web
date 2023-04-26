@@ -31,7 +31,6 @@ function MakeCalendar(date){
 	let array_of_array = [["ПН", "ВТ", "СР", "ЧТ", "ПТ", "СБ", "ВС"]]
 
 	let wd = GetFirstWeekday(date.getMonth(), date.getFullYear())
-	console.log(date.getFullYear())
 
 	let thisday = date.getDate()
 	

@@ -40,6 +40,40 @@ function DrawCalendar(date) {
     calendar.innerHTML = MakeCalendar(date)
 }
 
+function AddToTable(){
+    let table = document.getElementById("table_task_5")
+
+    let x = null
+    while((x = prompt("Введите текст для добавления в таблицу")) != null){
+        // Если строка пустая или состоит из whitespace символов
+        if(!x.trim()){
+            alert("Низя!")
+            continue
+        }
+
+        let tr = document.createElement("tr")
+        let td = document.createElement("td")
+        td.innerHTML = x
+        tr.append(td)
+        table.append(tr)
+    }
+}
+
+function RemFromTable(){
+    let table = document.getElementById("table_task_5")
+
+    let willBeDeleted = []
+    let trs = table.querySelectorAll("tr")
+
+    for(let tr of trs){
+        let td = tr.querySelector("td")
+        if(confirm(`Строка содержит: ${td.innerHTML}. Удаляем?`))
+            willBeDeleted.push(tr)
+    }
+
+    for(let tr of willBeDeleted)
+        tr.remove()
+}
 
 window.onload = () => {
     let vis = false
@@ -55,6 +89,28 @@ window.onload = () => {
     date_input.addEventListener("change", (event) => {
         DrawCalendar(event.target.valueAsDate)
     });
+
+    let values = ["Значение 1", "Значение 2", "Значение 3", "Значение 4", "Значение 5"]
+    let global_counter = 0;
+
+    let par_1 = document.getElementById("par_1")
+    let par_2 = document.getElementById("par_2")
+
+    par_1.addEventListener("mouseover", () => {
+        par_1.innerHTML = values[global_counter]
+        global_counter = (global_counter + 1) % values.length
+    })
+
+    par_2.addEventListener("mouseover", () => {
+        par_2.innerHTML = values[global_counter]
+        global_counter = (global_counter + 1) % values.length
+    })
+
+    let menu = document.getElementById("menu")
+
+    menu.addEventListener("click", () => {
+        document.getElementById("menu_items").style.display = "block"
+    })
 
     let handlers = {
         task_button_1: () => {
@@ -79,7 +135,10 @@ window.onload = () => {
 
                 clearInterval(an)
             }
-        }
+        },
+
+        add_to_table: AddToTable,
+        rem_from_table: RemFromTable,
     }
 
     for(butt in handlers){
