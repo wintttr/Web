@@ -67,7 +67,6 @@ window.onload = () => {
 
     menu.addEventListener("click", () => {
         menu_items.style.maxHeight = "100px"
-        
     })
 
     for(let x of menu_items.getElementsByClassName("menu_item")){
@@ -80,4 +79,8 @@ window.onload = () => {
             }
         })
     }
+
+    // Задание 8
+    starkreality.addEventListener("mouseover", () => starkreality.style.opacity = 0.1)
+    starkreality.addEventListener("mouseout", () => starkreality.style.opacity = 1)
 }
